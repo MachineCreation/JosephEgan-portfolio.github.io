@@ -15,31 +15,36 @@ export default {
         'hflip': {
           '0%': {
             display: 'flex',
-            margin: '40%',
+            'margin-left': 'calc(50vw - 3rem)',
+            'margin-top': 'calc(50dvh - 3rem)',
             transform: 'scale(2) translateY(0px)',
-          },
-          '5%': {
-            display: 'flex',
-            margin: '40%',
-            transform: 'scale(2) translateY(-30px)',            
           },
           '10%': {
             display: 'flex',
-            margin: '40%',
-            transform: 'scale(2) translateY(0px)',
-          },
-          '15%': {
-            display: 'flex',
-            margin: '40%',
-            transform: 'scale(2) translateY(-10px)',
+            'margin-left': 'calc(50vw - 3rem)',
+            'margin-top': 'calc(50dvh - 3rem)',
+            transform: 'scale(2) translateY(-30px)',            
           },
           '20%': {
             display: 'flex',
-            margin: '40%',
+            'margin-left': 'calc(50vw - 3rem)',
+            'margin-top': 'calc(50dvh - 3rem)',
             transform: 'scale(2) translateY(0px)',
           },
-          '25%': {},
+          '25%': {
+            display: 'flex',
+            'margin-left': 'calc(50vw - 3rem)',
+            'margin-top': 'calc(50dvh - 3rem)',
+            transform: 'scale(2) translateY(-10px)',
+          },
           '30%': {
+            display: 'flex',
+            'margin-left': 'calc(50vw - 3rem)',
+            'margin-top': 'calc(50dvh - 3rem)',
+            transform: 'scale(2) translateY(0px)',
+          },
+          '35%': {},
+          '40%': {
             display: 'flex',
             transform: 'scale(2)',
             transform: 'rotateY(0deg)'

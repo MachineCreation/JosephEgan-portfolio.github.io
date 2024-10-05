@@ -2,5 +2,9 @@
 
 export default function Home() {
 
-    return <></>
+    return (
+        <article className="relative flex w-full h-full">
+            <></>
+        </article>
+    )
 }

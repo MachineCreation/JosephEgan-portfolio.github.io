@@ -1,7 +1,9 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
+//components
 import routes from './routes';
 import Header from './assets/structural_components/header';
+import { RouteType } from './routes';
 
 function App() {
   
@@ -9,11 +11,11 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        { routes.map((route:any, index: any) => (
+        { routes.map((route:RouteType, index: number) => (
           <Route
             key={index}
             path={route.path}
-            element={route.component}
+            Component={route.component}
             />
           ))
         };

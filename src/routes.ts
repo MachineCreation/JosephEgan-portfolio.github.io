@@ -1,7 +1,7 @@
 import Dashboard from "./assets/pages/dashboard";
 import Home from "./assets/pages/home";
 
-interface RouteType {
+export interface RouteType {
     path: string;
     component: React.ComponentType<any>;
     name: string;
