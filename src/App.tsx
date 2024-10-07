@@ -10,6 +10,7 @@ function App() {
 
   return (
     <HashRouter>
+      <Header></Header>
       <Routes>
         { routes.map((route:RouteType, index: number) => (
           <Route
@@ -20,7 +21,6 @@ function App() {
           ))
         };
       </Routes>
-      <Header></Header>
     </HashRouter>
   )
 }

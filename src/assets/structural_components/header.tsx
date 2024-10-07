@@ -7,10 +7,10 @@ import NavMenu from "./navMenu";
 //functions
 
 const Header = () => {
-    const [menuIsVisable, setMenuIsVisable] = useState<boolean>(false)
+    const [menuIsVisable, setMenuIsVisable] = useState<boolean | null>(null)
 
     return (
-        <header className="sticky p-2">
+        <header className="fixed top-0 p-2">
             <div className="relative aspect-square w-[5rem] animate-horizontal-flip preserve-3d"
                 onClick={() => {setMenuIsVisable(!menuIsVisable)}}>
                 <img id="icon-pos" 
@@ -23,11 +23,7 @@ const Header = () => {
                     className="absolute w-full bg-purple-600 rounded-full rotate-180 translate-z-1"
                     />
             </div>
-            {menuIsVisable? (
-                <NavMenu />
-            ):(
-                <></>
-            )}
+            <NavMenu isVisible={menuIsVisable} duration={500}/>
             
         </header>
     )
