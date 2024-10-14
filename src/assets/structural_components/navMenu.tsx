@@ -16,10 +16,10 @@ interface NavMenuProps {
 
 const NavMenu = ({isVisible, duration}: NavMenuProps) => {
     const nav = useNavigate();
-    const menuAnimationClass = rollInOutAnimation(isVisible);
+    const menuAnimation = rollInOutAnimation(isVisible);
 
     return (
-        <menu className={`absolute top-full m-2 p-2 rounded-xl w-fit h-fit bg-slate-400 transition-all transform origin-top-left duration-${duration} ${menuAnimationClass}`} 
+        <menu className={`absolute top-full m-2 p-2 rounded-xl w-fit h-fit bg-slate-400 transform origin-top-left duration-${duration} ${menuAnimation}`} 
             style={{ opacity: isVisible ? 1 : 0, pointerEvents: isVisible ? 'auto' : 'none' }}>
             <ul className="relative">
                 { routes.map((route: RouteType, index: number) => (

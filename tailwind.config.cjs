@@ -1,3 +1,4 @@
+import { transform } from 'typescript';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,13 +8,21 @@ export default {
       translate: {
         'z-1': 'transform: translateZ(-1px)'
       },
+      border: {
+        'text-box': 'border-radius: .5rem'
+      },
       animation: {
         'horizontal-flip': "hflip 3.5s ease-in-out",    // for nav icon
+        'rush-right': 'rushRight .5s ease-out',    // for name tag and text box
+        'rush-left': 'rushLeft .5s ease-out',    // for textbox
 
         'roll-in': 'rollIn .75s ease-in-out',   // for nav menu and ___
         'roll-out': 'rollOut .75s ease-in-out',
 
-        'fade-in': 'fadeIn 4.5s ease-out',  // for hero image
+        'fade-in-0.75': 'fadeIn .75s ease-in-out', // for text boxes
+        'fade-out-0.75': 'fadeOut .75s ease-in',  // for pannels
+        'fade-in-4.5': 'fadeIn 4.5s ease-out',  // for hero image
+        
       },
       keyframes: {
         'hflip': {    // for nav icon
@@ -56,6 +65,26 @@ export default {
           '100%': {
             transform: 'rotateY(1080deg)',
           },
+        },
+        'rushRight': {
+          '0%': {
+            opacity: 0,
+            transform: 'translateX(-100vw)'
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateX(0vw)'
+          }
+        },
+        'rushLeft': {
+          '0%': {
+            opacity: 0,
+            transform: 'translateX(100vw)'
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateX(0vw)'
+          }
         },
         'rollIn': {     // for nav menu and ___
           '0%': {
@@ -101,11 +130,16 @@ export default {
           '0%': {
             opacity: 0,
           },
-          '75%': {
-            opacity: 0,
-          },
           '100%': {
             opacity: 1,
+          }
+        },
+        'fadeOut': {
+          '0%': {
+            opacity: 1,
+          },
+          '100%': {
+            opacity: 0,
           }
         }
       },
@@ -122,6 +156,17 @@ export default {
         },
         '.translate-z-1': {
           'transform': 'translateZ(-1px)'
+        },
+        '.truncate-paragraph': {
+          display: '-webkit-box',
+          '-webkit-line-clamp': '3',
+          '-webkit-box-orient': 'vertical',
+          overflow: 'hidden',
+          'text-overflow': 'ellipsis',
+        },
+        '.active-button': {
+          border: '.1rem solid blue',
+          'box-shadow': '0 0 .1rem .1rem rgba(255,255,255,.5)'
         }
       });
     },
