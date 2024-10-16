@@ -1,6 +1,6 @@
 export const card1 = {
     name: "CryptoHindsight",
-    background: "",
+    background: "./TRAJ-Hub.png",
     description: "Sight for comparing cryptos side by side ",
     link: "https://dashing-manatee-d2c1ef.netlify.app/"
 }

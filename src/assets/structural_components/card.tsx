@@ -20,7 +20,7 @@ const Card = ({name, background, description, link}: CardProps) => {
 
     return (
         <article className={`relative flex flex-col w-full h-full`}>
-            <section className={`flex grow p-2 rounded-lg bg-black`}>
+            <section className={`flex grow p-2 rounded-lg bg-[url(${background}) bg-cover]`}>
                 <div className="flex grow self-end justify-between align-items-center p-2 rounded-lg text-sm bg-slate-800 bg-opacity-40">
                     <button className="p-2 bg-blue-400"
                             onClick={() => {nav(link)}}>Visit
