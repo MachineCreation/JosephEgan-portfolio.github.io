@@ -6,8 +6,9 @@ import { article2 } from '../articles/pannelTwo';
 
 // Components
 import BGhero from "../structural_components/bg-hero";
-import PannelOne from '../structural_components/pannel_one';
-import PannelTwo from '../structural_components/pannel_two';
+import PannelOne from '../structural_components/self';
+import PannelTwo from '../structural_components/projects';
+import Contact from '../structural_components/contact';
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
             <PannelTwo
                 article2={article2}
             />
+            <Contact />
         </article>
     )
 }

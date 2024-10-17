@@ -6,10 +6,10 @@ import { useInView } from 'react-intersection-observer';
 
 interface PannelOneProps {
     article: string;
-    article1: string
+    article1: string;
 }
 
-const PannelOne = ({article,article1}: PannelOneProps) => {
+const PannelOne = ({article, article1}: PannelOneProps) => {
 
     const [pannelIsVisible, setPannelIsVisible] = useState<boolean>(false);
     const [divOneVisible, setDivOneVisible] = useState<boolean>(false);
@@ -32,7 +32,7 @@ const PannelOne = ({article,article1}: PannelOneProps) => {
 
     return (
         <article ref={ref}
-                className={`relative flex flex-col md:flex-row w-full h-fit self-center justify-between p-4 text-white transition duration-500 ${pannelIsVisible? 'opacity-1': 'opacity-0'}`}
+                className={`relative flex flex-col md:flex-row w-full h-fit mb-[10vh] self-center justify-between p-4 text-white transition duration-500 ${pannelIsVisible? 'opacity-1': 'opacity-0'}`}
                 onTransitionEnd={() => {animationStates()}}>
             <section className="relative flex w-2/3 md:w-1/4 aspect-[6/9] m-2 mb-44 bg-blue-900">
                 <div className={`relative flex w-full aspect-square self-center p-4 left-[50%] bg-cyan-600 bg-opacity-60 rounded-lg overflow-x-scroll text-xl ${divOneVisible? 'animate-rush-left': 'opacity-0'}`}

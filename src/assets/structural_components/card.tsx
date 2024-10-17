@@ -1,7 +1,6 @@
 
 // React
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 interface CardProps {
     name: string;
@@ -14,16 +13,16 @@ const Card = ({name, background, description, link}: CardProps) => {
 
     const [descriptionView, setDescriptionView] = useState<boolean>(false);
 
-    const nav = useNavigate();
 
     // tripdik image/description/link
 
     return (
         <article className={`relative flex flex-col w-full h-full`}>
-            <section className={`flex grow p-2 rounded-lg bg-[url(${background}) bg-cover]`}>
+            <section className={`flex grow p-2 rounded-lg bg-cover bg-center`}
+                    style={{ backgroundImage: `url(${background})` }} >
                 <div className="flex grow self-end justify-between align-items-center p-2 rounded-lg text-sm bg-slate-800 bg-opacity-40">
                     <button className="p-2 bg-blue-400"
-                            onClick={() => {nav(link)}}>Visit
+                            onClick={() => window.open(link, "_blank")}>Visit
                     </button>
                     <div className="flex self-center">
                         {name}

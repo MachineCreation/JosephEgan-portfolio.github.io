@@ -34,12 +34,12 @@ const PannelTwo = ({article2}: PannelTwoProps) => {
     })
 
     return (
-        <div className="relative block w-full h-fit"
+        <div className="relative block w-full h-fit mb-[10vh]"
             ref={ref}>
             <article className={`relative flex h-fit w-full p-3 ${pannelIsVisible? 'animate-roll-in': 'animate-fade-out-0.75'}`}
                     style={{ opacity: pannelIsVisible ? 1 : 0 }}
                     onAnimationEnd={() => {resetAnimation()}}>
-                <div className=" flex flex-col md:flex-row h-full w-full p-4 justify-between bg-blue-400 opacity-80">
+                <div className=" flex flex-col md:flex-row h-full w-full p-4 justify-between md:bg-blue-400 opacity-80">
                     <section className={`relative flex flex-col w-full md:w-[30%] aspect-[3/4] max-h-screen p-4 my-2 md:my-0 justify-between bg-[url('./etower.jpg')] bg-cover rounded-xl ${textBox? 'animate-rush-right': 'opacity-0'}`}
                             onAnimationEnd={() => {setRadarBox(true)}}>
                         <div className="flex w-11/12 p-3 aspect-square bg-slate-900 bg-opacity-40 self-center rounded-lg">
