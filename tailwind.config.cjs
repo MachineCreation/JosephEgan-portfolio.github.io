@@ -167,6 +167,21 @@ export default {
         '.active-button': {
           border: '.1rem solid blue',
           'box-shadow': '0 0 .1rem .1rem rgba(255,255,255,.5)'
+        },
+        '.form-label': {
+          padding: '.2rem',
+          margin: '.5rem',
+          width: '50%',
+          
+        },
+        '.form-input': {
+          color: 'black',
+          padding: '.2rem',
+          margin: '.5rem',
+          width:'50%',
+          border: '.2rem solid cyan',
+          'border-radius': '.3rem',
+
         }
       });
     },
