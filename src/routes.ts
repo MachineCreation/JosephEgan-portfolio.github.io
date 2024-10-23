@@ -1,4 +1,6 @@
-import Dashboard from "./assets/pages/dashboard";
+// React
+
+// pages
 import Home from "./assets/pages/home";
 
 export interface RouteType {
@@ -12,12 +14,8 @@ const routes : RouteType[] = [
         path: "",
         component: Home,
         name: "Home"
-    },
-    {
-        path: "/Dashboard",
-        component: Dashboard,
-        name: "Dashboard"
     }
+    // More routes later
 ];
 
 export default routes;

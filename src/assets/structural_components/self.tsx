@@ -31,7 +31,9 @@ const PannelOne = ({article, article1}: PannelOneProps) => {
     
 
     return (
-        <article ref={ref}
+        <article 
+                id='About'
+                ref={ref}
                 className={`relative flex flex-col md:flex-row w-full h-fit mb-[10vh] self-center justify-between p-4 text-white transition duration-500 ${pannelIsVisible? 'opacity-1': 'opacity-0'}`}
                 onTransitionEnd={() => {animationStates()}}>
             <section className="relative flex w-2/3 md:w-1/4 aspect-[6/9] m-2 mb-44 bg-blue-900">

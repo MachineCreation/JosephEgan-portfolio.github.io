@@ -5,7 +5,7 @@
 // ------------
 export const rollInOutAnimation = (isVisible: boolean | null) => {
     if ( isVisible == null) {
-        return ""
+        return "opacity-0"
     };
     return isVisible ? 'animate-roll-in' : 'animate-roll-out';
 };

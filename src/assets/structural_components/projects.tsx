@@ -34,7 +34,9 @@ const PannelTwo = ({article2}: PannelTwoProps) => {
     })
 
     return (
-        <div className="relative block w-full h-fit mb-[10vh]"
+        <div 
+            id="Projects"
+            className="relative block w-full h-fit mb-[10vh]"
             ref={ref}>
             <article className={`relative flex h-fit w-full p-3 ${pannelIsVisible? 'animate-roll-in': 'animate-fade-out-0.75'}`}
                     style={{ opacity: pannelIsVisible ? 1 : 0 }}
