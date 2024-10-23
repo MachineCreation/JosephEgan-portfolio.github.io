@@ -40,24 +40,24 @@ const PannelTwo = ({article2}: PannelTwoProps) => {
                     style={{ opacity: pannelIsVisible ? 1 : 0 }}
                     onAnimationEnd={() => {resetAnimation()}}>
                 <div className=" flex flex-col md:flex-row h-full w-full p-4 justify-between md:bg-blue-400 opacity-80">
-                    <section className={`relative flex flex-col w-full md:w-[30%] aspect-[3/4] max-h-screen p-4 my-2 md:my-0 justify-between bg-[url('./etower.jpg')] bg-cover rounded-xl ${textBox? 'animate-rush-right': 'opacity-0'}`}
+                    <section className={`relative flex flex-col w-full md:w-[30%] aspect-[3/4] max-h-screen p-4 my-2 md:my-0 justify-end bg-[url('/etower.jpg')] bg-cover rounded-xl ${textBox? 'animate-rush-right': 'opacity-0'}`}
                             onAnimationEnd={() => {setRadarBox(true)}}>
-                        <div className="flex w-11/12 p-3 aspect-square bg-slate-900 bg-opacity-40 self-center rounded-lg">
-
-                        </div>
                         <p className="flex p-3 bg-slate-900 bg-opacity-40 self-end rounded-lg">
                             Eifel Tower, Paris, France, 2022
                         </p>
                     </section>
-                    <section className={`relative flex w-full md:w-[30%] aspect-[3/4] max-h-screen p-4 my-2 md:my-0 bg-green-500 rounded-xl ${radarBox? 'animate-rush-right': 'opacity-0'}`}
+                    <section className={`relative flex w-full md:w-[30%] aspect-[3/4] max-h-screen p-4 my-2 md:my-0 justify-center bg-green-500 rounded-xl ${radarBox? 'animate-rush-right': 'opacity-0'}`}
                             onAnimationEnd={() => {setCaroselBox(true)}}>
-
+                        <div className="flex w-full p-3 h-fit max-h-[75%] bg-slate-900 bg-opacity-40 self-center rounded-lg">
+                            <p className="flex text-lg overflow-y-scroll">
+                                {article2}
+                            </p>
+                        </div>
                     </section>
                     <section className={`relative flex w-full md:w-[30%] aspect-[3/4] max-h-screen p-4 my-2 md:my-0 bg-purple-700 rounded-xl ${caroselBox? 'animate-rush-right': 'opacity-0'}`}>
                         <Carousel />
                     </section>
                 </div>
-                {article2}
             </article>
         </div>
     )

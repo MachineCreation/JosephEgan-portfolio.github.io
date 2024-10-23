@@ -182,6 +182,9 @@ export default {
           border: '.2rem solid cyan',
           'border-radius': '.3rem',
 
+        },
+        '.bg-hero': {
+          'background-image': 'url("/hero.jpg")'
         }
       });
     },

@@ -16,7 +16,7 @@ const BGhero = (props: BGheroProps) => {
 
     return (
         <article 
-            className="relative flex flex-col w-screen min-h-dvh h-fit mb-[10vh] px-10 bg-[url('hero.jpg')] bg-right bg-cover animate-fade-in-4.5 text-white"
+            className="relative flex flex-col w-screen min-h-dvh h-fit mb-[10vh] px-10 bg-hero bg-right bg-cover animate-fade-in-4.5 text-white"
             onAnimationEnd={() => {setHeroIsVisible(true);}}>
                 <div className="relative flex grow flex-wrap justify-between top-28 md:top-38">
                     <h1 className={`relative flex  max-w-sm h-fit xl:max-w-md m-3 p-4 rounded-lg bg-slate-800 bg-opacity-30 shadow-lg text-2xl ${heroIsVisible? 'animate-fade-in-0.75': 'hidden'}`}

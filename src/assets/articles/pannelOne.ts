@@ -1,4 +1,4 @@
 
-export const article0 = ''
+export const article0 = "My early years in the labor industry weren’t just about clocking in; they were where I learned resilience and grit. Those 55+ hour weeks weren’t just hard work—they were a crash course in dedication. Juggling labor-intensive days with the demands of coding school was no small feat, but it showed me what commitment truly looks like and set me on a path to building a future with my own hands."
 
-export const article1 = ''
+export const article1 = "When I’m not in work boots tackling tough jobs, I’m out climbing rock walls or diving into coding and 3D modeling. At first glance, these hobbies might seem unrelated, but they share a common thread—the satisfaction of creating something and the excitement of solving tough problems. Years of hard work and constant learning, all while balancing a busy schedule, have shaped the focus and drive I bring to my shift into tech. Now, as I stand on the edge of a career change, I’m as ready to take on the challenges of software development as I am a tough bouldering route or exploring a new place."

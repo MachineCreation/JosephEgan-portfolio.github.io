@@ -16,7 +16,7 @@ const ContactForm = () => {
       e.preventDefault();
   
       try {
-        const response = await fetch('http://localhost:5000/send-email', {
+        const response = await fetch('https://traj-hub.onrender.com/send-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const ContactForm = () => {
     };
   
     return (
-      <div className="relative flex flex-col w-full h-fit p-2">
+      <div className="relative flex flex-col w-full h-full p-2 justify-around text-center ">
         <header className="flex self-center text-center text-xl text-gray-800 font-bold underline decoration-purple-700 ">
             Contact Me by E-mail.
         </header>
