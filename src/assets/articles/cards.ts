@@ -9,7 +9,7 @@ export const card2 = {
     name: "TRAJ-hub",
     background : 'TRAJ-Hub.png',
     description: "Team sight for COD team",
-    link: "https://venerable-centaur-983b8b.netlify.app/"
+    link: "https://traj-hub.netlify.app/"
 }
 
 export const card3 = {
